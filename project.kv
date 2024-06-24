@@ -1,0 +1,13 @@
+# project.kv
+
+#:kivy 2.0.0
+
+<ClockApp>:
+    root: time_label  # Setting the root widget to reference the 'time_label' widget
+
+    Label:
+        id: time_label
+        text: root.current_time  # Binding the text property to the 'current_time' property of ClockApp
+        font_size: 80
+        bold: True
+        color: 1, 1, 1, 1
